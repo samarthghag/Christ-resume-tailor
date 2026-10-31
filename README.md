@@ -14,10 +14,11 @@ A Claude skill that turns a CHRIST (Deemed to be University) student's resume in
 
 ## Install
 
-1. Download this repo as a ZIP (Code → Download ZIP).
-2. Zip the `skills/christ-resume-tailor` folder.
-3. In Claude: Settings → Capabilities → Skills → Upload skill.
-4. Start a chat and say: *"Tailor my resume for this job"*, then attach your resume and the JD.
+**Requirements:** a Claude account on a plan that supports Skills, with code execution / file creation enabled in Settings.
+
+1. Go to [Releases](https://github.com/samarthghag/Christ-resume-tailor/releases) and download `christ-resume-tailor.zip`.
+2. In Claude: Settings → Capabilities → Skills → Upload skill.
+3. Start a chat and say: *"Tailor my resume for this job"*, then attach your resume and the JD.
 
 ## Usage
 
@@ -26,15 +27,9 @@ Provide:
 2. The job description or a link to it
 3. Output format: `.docx`, PDF, or both
 
-## Example
-
-| Before | After |
-|---|---|
-| _Add anonymised sample resume_ | _Add tailored output screenshot_ |
-
 ## Templates
 
-The official template lives in [`Template/`](./Template):
+The official template lives in [`skills/christ-resume-tailor/Template/`](./skills/christ-resume-tailor/Template/):
 - `CHRIST_Resume_ATS_Template.docx`
 
 The CHRIST template is always the default. To add another template, put all its source files in `Template/` first and add its layout and selection rules to the skill. The skill never reconstructs a missing template.

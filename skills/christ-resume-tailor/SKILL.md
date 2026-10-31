@@ -1,6 +1,6 @@
 ---
 name: "christ-resume-tailor"
-description: "Create a one-page, job-tailored resume only for students of CHRIST (Deemed to be University), using a template from the repository's Template folder."
+description: "Create a one-page, job-tailored resume only for students of CHRIST (Deemed to be University), using the bundled template from this skill's Template folder."
 ---
 
 # CHRIST Resume Tailor
@@ -28,10 +28,10 @@ If they upload several versions of their resume, merge them into one fact bank. 
 Use the official CHRIST template at `./Template/CHRIST_Resume_ATS_Template.docx` by default.
 
 **Template rules:**
-- Use only a template that exists in the repository's `Template/` folder.
+- Use only a template that exists in this skill's `Template/` folder.
 - Do not create, reconstruct, or approximate a missing template.
 - If another template is requested, stop and ask for all necessary source
-  template files to be added to `Template/` before generating the resume.
+  template files to be added to this skill's `Template/` folder before generating the resume.
 - When a new template is added, inspect it and follow its layout, fonts,
   spacing, branding, and required sections exactly.
 - Keep the CHRIST-student scope even when an alternate template is selected.
