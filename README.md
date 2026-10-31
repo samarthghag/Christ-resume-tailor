@@ -1,51 +1,61 @@
 # CHRIST Resume Tailor
 
-This skill creates job-tailored resumes **only for students of CHRIST (Deemed to
-be University)**. The default output is a CHRIST-branded, one-page resume based
-on the official template stored in the [`Template/`](./Template/) folder.
+A Claude skill that turns a CHRIST (Deemed to be University) student's resume into a one-page, job-tailored, ATS-friendly resume using the **official CHRIST template**.
+
+> **CHRIST students only.** This is not a general-purpose resume builder.
 
 ## What it does
 
-- Collects the student's resume, facts, and target job description.
-- Tailors the wording and ordering to the target role without inventing facts.
-- Preserves the official CHRIST layout, branding, fonts, spacing, and required
-  education details.
-- Produces a ready-to-submit `.docx`, PDF, or both, depending on the student's
-  request.
+- Collects your resume, facts, and the target job description.
+- Rewrites and reorders content to match the role, **without inventing facts**.
+- Keeps the official CHRIST layout, branding, fonts, spacing, and required education details.
+- Outputs a ready-to-submit `.docx`, PDF, or both.
+- Always one page, Indian English spelling.
 
-This is not a general-purpose resume builder. Do not use it to create resumes
-for students who are not from CHRIST University.
+## Install
 
-## About the creator
-
-This skill was created and is maintained by **Samarth Ghag**, a fourth-year
-student at the **CHRIST (Deemed to be University), Yeshwanthpur Campus**.
-Samarth created it to help CHRIST students prepare focused, accurate,
-job-tailored resumes while preserving the university's official resume format.
-
-- GitHub: [samarthghag](https://github.com/samarthghag)
-- LinkedIn: [Samarth Ghag](https://www.linkedin.com/in/samarth-ghag/)
-
-## Templates
-
-The official CHRIST template currently available is:
-
-- [`Template/1785318356914CHRIST_Resume_ATS_Word.docx`](./Template/1785318356914CHRIST_Resume_ATS_Word.docx)
-
-The CHRIST template is the default and must be used unless another template is
-explicitly requested. If support for additional resume templates is needed,
-place **all necessary source template files** in [`Template/`](./Template/)
-first. The skill must use a template that exists in that folder; it must not
-invent or reconstruct a missing template. Add each new template's layout,
-branding, and selection guidance to the skill before using it.
+1. Download this repo as a ZIP (Code → Download ZIP).
+2. Zip the `skills/christ-resume-tailor` folder.
+3. In Claude: Settings → Capabilities → Skills → Upload skill.
+4. Start a chat and say: *"Tailor my resume for this job"*, then attach your resume and the JD.
 
 ## Usage
 
 Provide:
+1. Your current resume, or your details
+2. The job description or a link to it
+3. Output format: `.docx`, PDF, or both
 
-1. The current resume, or the student's resume details.
-2. The job description or a link to it.
-3. The requested output format: `.docx`, PDF, or both.
+## Example
 
-The resulting resume remains one page, uses Indian English spelling, and
-contains only facts supplied by the student.
+| Before | After |
+|---|---|
+| _Add anonymised sample resume_ | _Add tailored output screenshot_ |
+
+## Templates
+
+The official template lives in [`Template/`](./Template):
+- `CHRIST_Resume_ATS_Template.docx`
+
+The CHRIST template is always the default. To add another template, put all its source files in `Template/` first and add its layout and selection rules to the skill. The skill never reconstructs a missing template.
+
+## Guarantees
+
+- Only facts you supply are used. Missing details are asked for, not guessed.
+- One page, with overflow trimmed starting from the lowest-value bullets.
+- JD keyword match check before final output.
+
+## About the creator
+
+This skill was created and is maintained by **Samarth Ghag**, a BCA (Honours & Research) student at **CHRIST (Deemed to be University), Bengaluru**, graduating in 2027.
+
+- **Co-Founder & CTO, College Circle AI**: a personalised learning platform for college students.
+- **Founder, Vault Vortex**: a fintech education club at CHRIST.
+- **Student leadership**: IEEE and BYC Student Council at CHRIST.
+- **Experience**: AI Research & Outreach Intern at The Builder Club; Chief of Staff at GuideHero.
+
+**Connect:** [GitHub](https://github.com/samarthghag) · [LinkedIn](https://www.linkedin.com/in/samarth-ghag/) · [Open an issue](https://github.com/samarthghag/Christ-resume-tailor/issues)
+
+## License
+
+MIT. The CHRIST name, logo, and template layout remain the property of CHRIST (Deemed to be University).

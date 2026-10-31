@@ -25,7 +25,7 @@ If they upload several versions of their resume, merge them into one fact bank. 
 
 ## Step 2 — Pick the template
 
-Use the official CHRIST template at `./Template/1785318356914CHRIST_Resume_ATS_Word.docx` by default.
+Use the official CHRIST template at `./Template/CHRIST_Resume_ATS_Template.docx` by default.
 
 **Template rules:**
 - Use only a template that exists in the repository's `Template/` folder.
@@ -49,6 +49,14 @@ Use the official CHRIST template at `./Template/1785318356914CHRIST_Resume_ATS_W
 - Dates go right-aligned, in italics, as "Mon YYYY – Mon YYYY" or "– Present".
 - Give 2 bullets per role or project.
 - Use consistent bullet characters and dashes throughout.
+
+## Rules
+
+- If any fact needed for a section is missing (dates, scores, links, role details), ask the student. Never guess or invent.
+- After drafting, extract the top keywords from the JD and confirm each relevant one appears naturally in the resume. Report any gaps to the student rather than stuffing keywords.
+- The resume must fit exactly one page. If it overflows, cut in this order: oldest or least relevant bullets, then extra skills, then verbose wording. Never shrink fonts or margins below the template's settings.
+- Use Indian English spelling (organisation, programme, etc.).
+- Only use this skill for CHRIST students. If the user is not from CHRIST, say so and stop.
 
 ## Step 3 — Build the Fact Bank
 Before writing anything, extract the student's facts into these groups:
